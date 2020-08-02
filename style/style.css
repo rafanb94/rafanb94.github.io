@@ -41,7 +41,11 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-p,li, label, button{
+label {
+  font-size: 1.5rem;
+  color: var(--text-color)
+}
+p,li, button{
   font-size: 1rem;
   font-weight: 400;
   line-height: var(--line-height);
@@ -140,8 +144,6 @@ html{
 
 /*Header*/
 .header {
-  /* position: -webkit-sticky;
-  position: sticky; */
   position: fixed;
   width: 100%;
   top: 0px;
@@ -155,7 +157,6 @@ html{
   max-width: 1280px;
   margin: 0 auto;
   width: 90%;
-  /* background-color: red; */
 }
 .scrolled-header{
   padding: 2px !important;
@@ -272,10 +273,11 @@ color:#ff5800;
   margin:0px;
   padding: 0px;
   font-size: 4em;
-  transition: 0.5s;}
+  transition: 0.5s;
+}
 #xg.box h2 {
-    color: rgba(37,211,102,.5);
-  }
+  color: rgba(37,211,102,.5);
+}
 #xn.box h2 {
   color: rgba(0,127,255,.5);
 }
@@ -454,7 +456,7 @@ color:#ff5800;
   display: none;
   visibility: hidden;
 }
-/* ===EFECTS=== */
+/* ===EFFECTS=== */
 .scroll{
   width: 100px;
   height: 80px;
