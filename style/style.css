@@ -15,6 +15,7 @@
 img {
   max-width: 100%;
   display: block;
+  max-height: 100%;
 }
 li {
   list-style: none;
@@ -72,7 +73,7 @@ html{
 .flex-col{
   flex-direction: column;
 }
-.justify-content-center {
+.justify-center {
   justify-content: center;
 }
 .align-items-center {
@@ -86,6 +87,9 @@ html{
 }
 .justify-evenly{
   justify-content: space-evenly;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .d-grid-col-1 {
   display: grid;
@@ -314,16 +318,16 @@ color:#ff5800;
   display: inline-block;
   color: #25D366;
   transition: 0.5s;
-  transform: translateY(-40px);
+  /* transform: translateY(-40px);
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden; */
   text-transform: uppercase;
 }
-.box:hover .box__content a {
+/* .box:hover .box__content a {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
-}
+} */
 .container .box:nth-child(1):before {
   background: linear-gradient(315deg, rgba(137,255,0,1) 0%, rgba(50,222,132,1) 35%, rgba(37,211,102,1) 100%);
 }
@@ -365,7 +369,7 @@ color:#ff5800;
 .form__content form input {
   background-color: #f0f0f5;
   border-radius: 8px 0 0 8px;
-  border:0;
+  border: 1px solid var(--text-color);
   padding: 1rem;
   display: block;
   color: #6c6c80;
@@ -379,9 +383,9 @@ color:#ff5800;
   border: 1px solid var(--text-color);
   border-radius: 0 8px 8px 0;
 }
-.form__content button {
-  float: right;
-  margin: 2rem 0px 5rem 0px;
+.form__content .button button {
+  text-align: center;
+  margin: 0 auto;
   color:var(--p--color)
 }
 .form-checks p {
@@ -400,20 +404,17 @@ color:#ff5800;
   padding: 8px 0px;
   width: 90%;
 }
-.application-1,.application-2 {
+.application-i-c,.application-c-i {
   margin-bottom: 2rem;
   box-shadow: var(--box-shadow);
 }
 .application__content {
   padding: 0px 16px;
 }
-.applications img {
-  max-width: 100%;
-}
-.application-1 .application__content{
+.application-i-c .application__content{
   background-color: rgba(125, 125, 125, 0.1);
 }
-.application-2 .application__content{
+.application-c-i .application__content{
   background-color: rgba(255, 138, 77, .1);
 }
 .xg, .xn{
@@ -500,14 +501,14 @@ color:#ff5800;
   }
 }
 /* === PRODUCTS SECTION === */
-@media (min-width: 300px) and (max-width: 768px){
+@media (min-width: 300px) and (max-width: 767px){
   .products .container {
     grid-template-columns: 1fr;
   }
 }
 @media (min-width:768px) and (max-width:1279px){
   .products .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* ==ADVANTAGES SECTION=== */
@@ -519,14 +520,23 @@ color:#ff5800;
     grid-template-columns: 1fr;
   }
   .advantages__form .title{
-    padding-top: 10rem;
+    padding-top: 1rem;
   }
+  .advantages__form button {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
 }
 /* ===Applications SECTION=== */
-@media (max-width: 1023px) {
+@media (max-width: 980px) {
   .applications .d-grid-col-2 {
     grid-template-columns: 1fr;
-    background-color: aqua;
+  }
+}
+@media (min-width: 1023px){
+  .applications img {
+    height: 100%;
   }
 }
 /*==INSTAGRAM SECTION==*/
