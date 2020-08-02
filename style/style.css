@@ -241,7 +241,7 @@ color:#ff5800;
 }
 .box {
   position: relative;
-  height: 540px;
+  height: 600px;
   display: flex;
   background: #fafafa;
   justify-content: center;
@@ -504,9 +504,6 @@ color:#ff5800;
   .products .container {
     grid-template-columns: 1fr;
   }
-  .box {
-    height: 540px;
-  }
 }
 @media (min-width:768px) and (max-width:1279px){
   .products .container {
@@ -526,10 +523,11 @@ color:#ff5800;
   }
 }
 /* ===Applications SECTION=== */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .applications .d-grid-col-2 {
-    grid-template-columns: minmax(450px, 1fr);
-  } 
+    grid-template-columns: 1fr;
+    background-color: aqua;
+  }
 }
 /*==INSTAGRAM SECTION==*/
 @media (max-width: 768px) {
