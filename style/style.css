@@ -15,7 +15,6 @@
 img {
   max-width: 100%;
   display: block;
-  max-height: 100%;
 }
 li {
   list-style: none;
@@ -55,12 +54,7 @@ p,li, button, a{
   line-height: var(--line-height);
   color: var(--text-color)
 }
-.row-span-1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
+
 /* FIM GLOBAL STYLES */
 
 /*Helpers*/
@@ -197,6 +191,12 @@ p,li, button, a{
 }
 .reference p {
  padding: 2% 0px;
+}
+.reference-img{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 .banner {
 text-align: center;
@@ -410,6 +410,9 @@ color:#ff5800;
 .applications {
   margin: 5rem 0px
 }
+.applications img {
+  max-height: 100%;
+}
 .applications .container {
   max-width: 1280px;
   margin: 2em auto 0px auto;
@@ -508,6 +511,12 @@ color:#ff5800;
   }
 .reference .container {
     margin: 150px auto 50px auto;
+  }
+  .reference-img {
+    grid-row-start: initial;
+    grid-row-end: initial;
+    grid-column-start: initial;
+    grid-column-end: initial;
   }
 }
 /* === PRODUCTS SECTION === */
