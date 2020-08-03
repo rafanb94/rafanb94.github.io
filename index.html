@@ -13,29 +13,31 @@
 </head>
 
 <body>
-
-    <div id="home" class="header">
-        <div class="container d-flex justify-between d-flex-wrap align-items-center">
-            <!-- <div class="d-flex justify-between d-flex-wrap align-items-center"> -->
-                <div class="logo">
-                    <img src="/images/oxira-brasil-logo.png" alt="logo da empresa">
-                </div>
-                <div class="menu d-flex justify-content-center">
-                    <ul class="d-flex">
-                        <!-- <li><a href="#" onClick="scrollTo(0,0)">Home</a></li> -->
-                        <li><a href="#products">Produtos</a></li>
-                        <!-- <li><a href="#advantages">Vantagens</a></li> -->
-                        <li><a><i class="fa fa-instagram" aria-hidden="true"></i> OXIRA BRASIL</a></li>
-                         <li><a href="#servicos"><i class="fa fa-whatsapp" aria-hidden="true"></i> (11)99999-9999</a></li>
-                </div>
-                </ul>
-        <!-- </div> -->
+    <header class="header">
+        <div class="container d-flex align-items-center justify-between">
+        <div class="logo">
+            <img src="/images/oxira-brasil-logo.png">
         </div>
-    </div>
-
+          
+          <div class="menu-section">
+            <div class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+            <nav class="menu">
+                <ul class="d-flex">
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#teste"><i class="fa fa-instagram" aria-hidden="true"></i> OXIRA BRASIL</a></li>
+                    <li><a href="#servicos"><i class="fa fa-whatsapp" aria-hidden="true"></i> (11)99999-9999</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
     <main>
         <section class="reference">
-            <div class="container d-grid-col-2 gap-1">
+            <div class="container d-grid-col-2 gap-1 align-items-center">
                 <div>
                     <header>
                         <h1>Purificadores de Ar</h1>
@@ -95,10 +97,10 @@
                         <h3 class="box__copy">Descrição</h3>
                             <p>Modelo Base. Ideal para pequenas áreas ou salas.</p>
                             <p> As ondas <strong>Ultra Violetas</strong> são naturalmente um germicida.</p>
-                        <div class="box__footer d-flex">
-                            <a class="button-whatsapp" href="https://wa.me/5511964629481">
-                            <i class="fa fa-whatsapp" aria-hidden="true"> Solicitar Orçamento</i></a>
-                        </div>
+                            <div class="box__footer">
+                                <a class="button-whatsapp" href="https://wa.me/5511964629481">
+                                <i class="fa fa-whatsapp" aria-hidden="true"> Solicitar Orçamento</i></a>
+                            </div>
                     </div>
                 </article>
 
@@ -328,6 +330,7 @@
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@ptkdev/webcomponent-instagram-widget@latest/dist/lib/en/instagram-widget.min.js"></script>
+<!-- === back to top === -->
 <script>
 function animateToTop(e) {
     window.scrollTo(0, 0);
@@ -341,11 +344,26 @@ window.addEventListener('scroll', (e) => {
     }
 });
 </script>
+<!-- === scroll menu effect === -->
 <script>
    window.addEventListener("scroll", function(){
         const header = document.querySelector(".header")
         header.classList.toggle("scrolled-header", window.scrollY > 0)
         })
+</script>
+<script>
+let show = true; 
+
+const menuSection = document.querySelector(".menu-section")
+const menuToggle = menuSection.querySelector(".menu-toggle")
+
+menuToggle.addEventListener("click", () => {
+
+    document.body.style.overflow = show ? "hidden" : "initial"
+
+    menuSection.classList.toggle("on", show)
+    show = !show;
+})
 </script>
 </body>
 </html>
