@@ -7,6 +7,7 @@
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 li {
   list-style: none;
@@ -200,7 +201,7 @@ html, body {
 }
 .about h1 {
   font-size: 2.5rem;
-  padding: 2rem;
+  padding: 2rem 0px;
 }
 .about h2 {
   font-size: 2rem;
@@ -816,8 +817,6 @@ html, body {
   padding: 3rem;
 }
 /* RESPONSIVE */
-/* ---REFERENCE SECTION--- */
-
 /* ---ABOUT SECTION--- */
 @media  (min-width: 1024px) and (max-width: 1279px){
   .about .d-grid-col-2, .about .d-grid-col-3 {
@@ -832,6 +831,9 @@ html, body {
 @media (min-width: 320px) and (max-width: 767px){
   .about .d-grid-col-2, .about .d-grid-col-3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .about h1 {
+    font-size: 2rem;
   }
 }
 /* ---PRODUCTS SECTION--- */
