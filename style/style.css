@@ -680,6 +680,14 @@ html, body {
   text-align: left;
   clear: both;
 }
+.timeline:before,
+.timeline:after {
+  content: "";
+  display: table;
+} 
+.timeline:after {
+  clear: both;
+}
 .timeline ul li:nth-child(odd)::before{
   content: '';
   position: absolute;
@@ -969,6 +977,9 @@ html, body {
     text-align: left;
     clear: both;
   }
+.timeline ul {
+  clear: both;
+}
 }
 @media (min-width: 320px) and (max-width: 767px){
   .news .timeline {
