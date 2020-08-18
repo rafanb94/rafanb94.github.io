@@ -17,16 +17,7 @@ window.addEventListener('scroll', (e) => {
         header.classList.toggle("scrolled-header", window.scrollY > 0)
         })
 
-// menu 
-let show = true; 
-
-const menuSection = document.querySelector(".menu-section")
-const menuToggle = menuSection.querySelector(".menu-toggle")
-
-menuToggle.addEventListener("click", () => {
-
-    document.body.style.overflow = show ? "hidden" : "initial"
-
-    menuSection.classList.toggle("on", show)
-    show = !show;
-})
+function menuToggle (){
+    let menuSection = document.querySelector(".menu-section")
+    menuSection.classList.toggle("on")
+}
