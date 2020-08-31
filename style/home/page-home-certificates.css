@@ -1,0 +1,124 @@
+.certificates {
+  padding: 3rem 0px 1rem 0px;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.certificates .container {
+  max-width: 1280px;
+  margin: 1rem auto;
+  padding: 1rem 0px;
+  width: 90%;
+}
+
+.certificates h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.certificates h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.certificates .testimonial {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 60%;
+}
+
+.certificates img {
+  margin: 2rem 50px;
+  display: inline-block;
+}
+
+.companys__logo span {
+  background-color: rgba(13, 13, 13, .1);
+  border-radius: 50%;
+  height: 100px;
+  width: 50px;
+  margin: 1rem;
+}
+
+.testimonial__content {
+  padding: 2rem;
+  height: 250px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 50% 100%, 50% 75%, 0% 75%);
+  background-color: rgba(13, 13, 13, .1);
+}
+
+.certificates p {
+  color: #2a2a2a;
+}
+
+.certificates h2,
+.certificates h3 {
+  color: #0d0d0d;
+}
+
+.certificates .testimonial__footer a {
+  color: #ff8906;
+}
+
+.testimonial__footer__profile img {
+  border-radius: 50%;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 200px
+}
+
+.testimonial__footer.d-grid-col-2 {
+  grid-template-columns: 250px 1fr;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .certificates .d-grid-col-2,
+  .certificates .d-grid-col-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .certificates.d-grid-col-2,
+  .certificates.d-grid-col-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .testimonial__footer img {
+    margin: 0 auto;
+  }
+  .certificates .companys__logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .certificates .companys__logo img {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .certificates.d-grid-col-2,
+  .certificates.d-grid-col-3,
+  .testimonial__footer.d-grid-col-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .testimonial {
+    width: 90%;
+    text-align: center;
+  }
+  .testimonial__content {
+    height: 400px;
+  }
+  .testimonial__footer img {
+    margin: 0 auto;
+  }
+  .certificates .companys__logo {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .certificates .companys__logo img {
+    padding: 2rem;
+  }
+}

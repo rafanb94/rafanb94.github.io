@@ -1,0 +1,122 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: #fffffe;
+  padding: 16px;
+  transition: 0.6s;
+  border-bottom: 4px solid #ff8e3c;
+}
+
+.scrolled-header {
+  padding: 2px !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .1);
+}
+
+.scrolled-header .logo {
+  padding: 0px;
+}
+
+.header .logo {
+  padding: 10px 0px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.menu li a {
+  display: block;
+  margin: 0 auto;
+  color: #0d0d0d;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.menu li span {
+  color: #25D366;
+  background: #d8f8e4;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.menu li span.menu-instagram {
+  background: #ead2f4;
+  color: #962fbf;
+}
+
+.menu li span.menu__callToAction {
+  background-color: #ff8906;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+
+/*Responsivo*/
+
+@media (min-width: 300px) and (max-width: 769px) {
+  nav {
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #ff8906;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menuToggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .menuSection.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff4ed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuSection.on nav {
+    display: block;
+  }
+  .menuSection.on .menuToggle {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+  }
+  .menuSection.on .menuToggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menuSection.on .menuToggle .two {
+    opacity: 0;
+  }
+  .menuSection.on .menuToggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+  .menuSection.on nav ul {
+    text-align: center;
+    display: block;
+  }
+  .menuSection.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    display: block;
+  }
+  .slider.desktop {
+    display: none;
+    visibility: hidden;
+  }
+  .slider.mobile {
+    display: block;
+    visibility: visible;
+  }
+}

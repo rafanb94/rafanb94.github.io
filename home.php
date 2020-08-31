@@ -26,20 +26,20 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/a.png">
+                        <img src="images/neutralizador-de-ar-ultra-compacto-direto-na-tomada-m.png">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/a-2.png" alt="A Luz UV-C no combate contra vírus, fungos e bactérias">
+                        <img src="images/luz-uvc-no-combate-contra-virus-fungos-bacterias-m.png" alt="A Luz UV-C no combate contra vírus, fungos e bactérias">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/Untitled.png" alt="Neutralizador de Ar Europeu agora disponível no Brasil no combate contra os vírus.">
+                        <img src="images/neutralizador-de-ar-da-europa-agora-no-brasil-m.jpg" alt="Neutralizador de Ar Europeu agora disponível no Brasil no combate contra os vírus.">
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
-    </div>
+     </div>
         <div id="o-que-e"></div>
         <section class="about">
             <header>
@@ -104,7 +104,7 @@
             </header>
                 <div class="container d-grid-col-3 gap-3">
                 
-                    <article id="xg" class="box d-flex d-flex-wrap justify-center align-items-end">
+                    <article id="xg" class="box d-flex d-flex-wrap justify-center align-items-center">
                             <header class="box__header text-center">
                                 <h2 class="box__h2"><span>XG</span></h2>
                                 <h3 class="box__h3">Características</h3>
@@ -135,7 +135,7 @@
                     </article>
     
     
-                    <article id="sentry" class="box d-flex d-flex-wrap justify-center align-items-end">
+                    <article id="sentry" class="box d-flex d-flex-wrap justify-center align-items-center">
                                 <header class="box__header text-center">
                                     <h2 class="box__h2"><span>SENTRY</span></h2>
                                     <h3 class="box__h3">Características</h3>
@@ -163,7 +163,7 @@
                                 </div>
                     </article>
                         
-                    <article id="xn" class="box d-flex d-flex-wrap justify-center align-items-end">
+                    <article id="xn" class="box d-flex d-flex-wrap justify-center align-items-center">
                         <header class="box__header text-center">
                             <h2 class="box__h2"><span>XN</span></h2>
                             <h3 class="box__h3">Características</h3>

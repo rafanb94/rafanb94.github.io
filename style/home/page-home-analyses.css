@@ -1,0 +1,25 @@
+.analyses .container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  padding: 2rem 0px;
+}
+
+.analyses h2,
+.analyses .fungi h3,
+.analyses .bacteria h3 {
+  color: #0d0d0d;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.analyses .fungi h3::after,
+.analyses .bacteria h3::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 3px;
+  background: #ff0028;
+  margin: 6px 0px 6px 0;
+}

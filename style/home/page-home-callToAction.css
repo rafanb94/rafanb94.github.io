@@ -1,0 +1,54 @@
+.call-to-action {
+  padding: 1rem 0px;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+  padding: 1rem 0px;
+}
+
+.call-to-action .fill {
+  background-color: #ff8906;
+  color: #fff;
+}
+
+.call-to-action .buttons-banner {
+  padding: 2rem;
+}
+
+.call-to-action .border {
+  color: #ff8906;
+  border: 1px solid #ff8906;
+}
+
+.arrowBounce {
+  position: relative;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+  fill: var(--primary-color);
+}
+
+.arrowBounce svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

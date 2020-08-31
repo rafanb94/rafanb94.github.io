@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="images/oxira-brasil-logo.ico" type="image/x-icon">
     <link rel="icon" href="images/oxira-brasil-logo.ico" type="image/x-icon">

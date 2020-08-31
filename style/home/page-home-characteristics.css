@@ -1,0 +1,62 @@
+.icon .fa-money,
+.fa-compress,
+.fa-rocket,
+.fa-shield,
+.fa-volume-off,
+.fa-lightbulb-o {
+  padding: 1rem;
+  display: inline-block;
+  margin: 0 auto;
+  color: #fff;
+  box-shadow: var(--box-shadow);
+  background-color: #f25f4c;
+  border-radius: 50%;
+  width: 74px;
+}
+
+.characteristics {
+  padding: 3rem 0px 1rem 0px;
+}
+
+.characteristics .container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0px;
+}
+
+.characteristics h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.image-hero {
+  background-color: #fefefe;
+}
+
+.image-hero img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .offers .d-grid-col-2,
+  .offers .d-grid-col-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .offers .d-grid-col-2,
+  .offers .d-grid-col-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .offers .d-grid-col-2,
+  .offers .d-grid-col-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

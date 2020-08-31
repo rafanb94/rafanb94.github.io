@@ -1,0 +1,74 @@
+.contactForm {
+  width: 40%;
+}
+
+.contactForm.container {
+  width: 35%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #0d0d0d;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1rem;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:valid~span {
+  color: #d9376e;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox button[type=submit] {
+  width: 200px;
+  background: #ff8906;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  margin: 1rem 0px;
+}
+
+.contactForm h3::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e53170;
+  margin: 6px auto 10px auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .contactForm.container {
+    width: 90%;
+  }
+}

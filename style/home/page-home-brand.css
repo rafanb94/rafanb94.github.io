@@ -1,0 +1,36 @@
+.brand {
+  background-color: #eff0f3;
+  padding: 3rem 0px;
+}
+
+.brand .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.brand h2 {
+  color: #0d0d0d;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.brand h2 {
+  color: #0d0d0d;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.brand p {
+  color: #2e2f3e;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.brand__img img {
+  margin: 0 auto;
+  padding: 3rem;
+}
