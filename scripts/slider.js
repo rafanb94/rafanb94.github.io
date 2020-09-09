@@ -1,7 +1,7 @@
 const mySwiper = new Swiper('.swiper-container', {
     autoHeight: true,
     grabCursor: true,
-    loop: false,
+    loop: true,
     pagination: {
     el: '.swiper-pagination',
   },
@@ -9,8 +9,8 @@ const mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
   },
-  // autoplay: {
-  //       delay: 2500,
-  //       disableOnInteraction: false,
-  //     },
+  autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
 })

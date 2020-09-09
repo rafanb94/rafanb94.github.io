@@ -1,37 +1,48 @@
 .slider {
   background-color: #fffffe;
 }
+
 .swiper-slide {
   margin: 0 auto;
 }
+
 .swiper-container {
-  margin: 110px auto 0 auto;
+  margin-top: 83px;
   width: 100%;
 }
-.swiper-button-next, .swiper-button-prev{
+
+.swiper-button-next,
+.swiper-button-prev {
   color: #ff8e3c;
 }
+
 .swiper-pagination-bullet-active {
   background: #ff8e3c;
 }
+
 .slider.mobile {
   display: none;
   visibility: hidden;
 }
+
+
 /*Responsivo*/
-@media (min-width: 1022px) and (max-width: 1236px){
+
+@media (min-width: 1022px) and (max-width: 1236px) {
   .swiper-container {
-    margin: 144px auto 0 auto;
+    margin: auto;
     background-color: #00a7ff;
   }
 }
-@media (min-width: 770px) and (max-width: 1050px){
+
+@media (min-width: 770px) and (max-width: 1050px) {
   .swiper-container {
     margin: 200px auto 0 auto;
     background-color: #00a7ff;
   }
 }
-@media (min-width: 300px) and (max-width: 769px){
+
+@media (min-width: 300px) and (max-width: 769px) {
   .slider.desktop {
     display: none;
     visibility: hidden;

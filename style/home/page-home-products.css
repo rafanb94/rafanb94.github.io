@@ -103,8 +103,8 @@
 #xg span {
   background-color: #00ff58;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -129,8 +129,8 @@
 #xn span {
   background-color: #00a7ff;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
