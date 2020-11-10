@@ -1,5 +1,5 @@
 function menuToggle (){
-    let menuSection = document.querySelector(".menuSection")
+    let menuSection = document.querySelector(".menu-section")
     menuSection.classList.toggle("on")
 }
 let canvas = document.getElementById("fungi");
@@ -8,7 +8,7 @@ let data = {
   "semOxira": [40, 35, 30, 25, 20, 19, 17, 16, 15, 15, 15, 15, 15],
   "comOxira": [10, 8, 6, 4, 3, 3, 2, 2, 1, 1, 1, 1, 1]
 };
-var fungi = new Chart(canvas, {
+const fungi = new Chart(canvas, {
   type: 'line',
   data: {
     labels: data.anos,
